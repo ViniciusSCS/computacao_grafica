@@ -13,7 +13,7 @@ void display(void)
         glVertex3f (0.75, 0.75, 0.0);
         glVertex3f (0.25, 0.75, 0.0);
    glEnd();
-   
+
    /* Triangulo */
     glBegin(GL_TRIANGLES);
         glColor3f (0.0, 1.0, 0.0);
@@ -33,9 +33,27 @@ void display(void)
         glVertex2f(0.25f,0.25f);
         glVertex2f(0.5f,0.0f);
         glVertex2f(0.5f,0.25f);
-    glEnd(); 
+    glEnd();
+
+    /* Circulo */
+    glBegin(GL_POLYGON);
+        glColor3f (1.0, 1.0, 0.0);
+        glVertex2f(0.0f, 0.0f);
+
+    glEnd();
 
 	glFlush ();
+}
+
+int calculaCircunferencia()
+{
+        int raio = 2;
+        int x = 1;
+        int y = 1;
+        int pi = 3.14;
+        int centro = ();
+
+
 }
 
 
